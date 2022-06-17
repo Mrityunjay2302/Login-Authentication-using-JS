@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Authentication</title>
+
+    <!-- Import Bootstrap -->
+
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Link Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Lato:wght@300&family=Manrope:wght@700&family=Poppins:wght@100;300&family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <h1>User Authentication using JavaScript</h1>
+
+    <div id="formContentContainer">
+        <form action="" method="post" id="form">
+            <div>
+                <h2>Resistration</h2>
+            </div>
+
+            <div id="inputContainer">
+                <div class="input">
+                    <label for="username">User Name</label>
+                    <input type="text" id="username" name="username" placeholder="Enter user name" size="40" class="changeButton">
+                    <p id="namePara" class="para"></p>
+                </div>
+
+
+                <div class="input">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Enter email" size="40" class="changeButton">
+                    <p id="emailPara" class="para"></p>
+                </div>
+
+                <div class="input">
+                    <label for="phonenum">Phone number</label>
+                    <input type="text" id="phonenum" name="phonenumber" placeholder="Enter phone number" size="40" class="changeButton" maxlength="10">
+                    <p id="phonePara" class="para"></p>
+                </div>
+
+                <div class="input">
+                    <label for="pass">Password</label>
+                    
+                    <!-- for icon -->
+                    <div class="icon">
+                        <input type="password" id="pass" name="password" placeholder="Enter password" size="40" class="changeButton">
+                    <i class="bi bi-eye-slash" id="togglePassword"></i>
+                    </div>
+                    
+                    <p id="passPara" class="para"></p>
+                    
+                </div>
+
+                <div class="input">
+                    <label for="repassword">Re-Enter password</label>
+
+                    <div class="icon">
+                        <input type="password" id="repassword" name="re-enter password" placeholder="Re-enter password"
+                        size="40" class="changeButton">
+                        <i class="bi bi-eye-slash" id="togPassword"></i>
+                    </div>
+                    
+                        <p id="repassPara" class="para"></p>
+                </div>
+
+                <div class="input">
+                    <button id="btn">SignUp</button>
+                </div>
+
+            </div>
+        </form>
+    </div>
+<script src="script.js"></script>
+</body>
+
+</html>
